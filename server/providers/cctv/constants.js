@@ -103,13 +103,16 @@ export const TXDOT_DISTRICT_ELEVATION_M = Object.freeze({
 export const TXDOT_DEFAULT_ELEVATION_M = 150;
 export const CALTRANS_CCTV_URL = (district) =>
   `https://cwwp2.dot.ca.gov/data/d${district}/cctv/cctvStatusD${String(district).padStart(2, '0')}.json`;
-/** Districts fetched by default: SF Bay (4), LA (7), San Diego (11), Sacramento (3). */
-export const DEFAULT_CALTRANS_DISTRICTS = '4,7,11,3';
-export const DEFAULT_CALTRANS_MAX_SOURCES = 300;
-/** Prioritization anchors: downtown cores of the four default metros. */
+/** Districts fetched by default: SF Bay (4), LA/Ventura (7), San Diego (11), Sacramento (3), Central Coast/Cambria (5). */
+export const DEFAULT_CALTRANS_DISTRICTS = '4,7,11,3,5';
+export const DEFAULT_CALTRANS_MAX_SOURCES = 600;
+/** Prioritization anchors: key metros and coastal monitoring hubs. */
 export const CALTRANS_ANCHORS = [
   { lat: 37.7793, lon: -122.4193 }, // San Francisco
   { lat: 34.0537, lon: -118.2428 }, // Los Angeles
+  { lat: 33.8492, lon: -118.3884 }, // Redondo Beach
+  { lat: 34.2746, lon: -119.229 }, // Ventura
+  { lat: 35.5641, lon: -121.0807 }, // Cambria
   { lat: 32.7157, lon: -117.1611 }, // San Diego
   { lat: 38.5816, lon: -121.4944 }, // Sacramento
 ];

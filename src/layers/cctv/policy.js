@@ -401,6 +401,102 @@ export const CAMERA_SEEDS = [
     rangeM: 700,
     elevationM: 20,
   },
+  {
+    id: 'cambria-moonstone-beach',
+    cityId: 'cambria',
+    poiIndex: 0,
+    label: 'Moonstone Beach Coastline', // i18n-ignore: camera name
+    offsetNorthM: 60,
+    offsetEastM: -40,
+    headingDeg: 305,
+    fovDeg: 78,
+    rangeM: 850,
+    elevationM: 18,
+  },
+  {
+    id: 'cambria-hwy1-village',
+    cityId: 'cambria',
+    poiIndex: 2,
+    label: 'Hwy 1 @ Cambria Corridor', // i18n-ignore: camera name
+    offsetNorthM: 140,
+    offsetEastM: 80,
+    headingDeg: 335,
+    fovDeg: 72,
+    rangeM: 920,
+    elevationM: 22,
+  },
+  {
+    id: 'redondo-king-harbor-pier',
+    cityId: 'redondo',
+    poiIndex: 0,
+    label: 'Redondo Pier & King Harbor', // i18n-ignore: camera name
+    offsetNorthM: 40,
+    offsetEastM: -50,
+    headingDeg: 28,
+    fovDeg: 76,
+    rangeM: 750,
+    elevationM: 20,
+  },
+  {
+    id: 'redondo-esplanade-bluff',
+    cityId: 'redondo',
+    poiIndex: 2,
+    label: 'Esplanade Coastal Bluff', // i18n-ignore: camera name
+    offsetNorthM: 80,
+    offsetEastM: 30,
+    headingDeg: 345,
+    fovDeg: 70,
+    rangeM: 800,
+    elevationM: 25,
+  },
+  {
+    id: 'ventura-historic-pier',
+    cityId: 'ventura',
+    poiIndex: 0,
+    label: 'Ventura Historic Pier & 101', // i18n-ignore: camera name
+    offsetNorthM: 50,
+    offsetEastM: -60,
+    headingDeg: 315,
+    fovDeg: 75,
+    rangeM: 780,
+    elevationM: 18,
+  },
+  {
+    id: 'ventura-port-hueneme-berth',
+    cityId: 'ventura',
+    poiIndex: 3,
+    label: 'Port Hueneme Naval Berth', // i18n-ignore: camera name
+    offsetNorthM: 90,
+    offsetEastM: 40,
+    headingDeg: 20,
+    fovDeg: 70,
+    rangeM: 900,
+    elevationM: 24,
+  },
+  {
+    id: 'hormuz-bandar-abbas-base',
+    cityId: 'hormuz',
+    poiIndex: 1,
+    label: 'Bandar Abbas Naval Command', // i18n-ignore: camera name
+    offsetNorthM: 120,
+    offsetEastM: 60,
+    headingDeg: 155,
+    fovDeg: 68,
+    rangeM: 1800,
+    elevationM: 35,
+  },
+  {
+    id: 'hormuz-kharg-terminal',
+    cityId: 'hormuz',
+    poiIndex: 2,
+    label: 'Kharg Island Crude Loading Jetty', // i18n-ignore: camera name
+    offsetNorthM: -80,
+    offsetEastM: 110,
+    headingDeg: 42,
+    fovDeg: 65,
+    rangeM: 2400,
+    elevationM: 30,
+  },
 ];
 
 // ---------------------------------------------------------------------------

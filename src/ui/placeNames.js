@@ -26,6 +26,13 @@ const PLACE_NAME_KEYS = new Map(
     msg('Washington DC'),
     msg('Tallinn'),
     msg('Los Angeles'),
+    msg('Cambria, California'),
+    msg('Redondo Beach, California'),
+    msg('Ventura, California'),
+    msg('Strait of Hormuz'),
+    msg('Bab el-Mandeb & Red Sea'),
+    msg('Taiwan Strait'),
+    msg('Black Sea & Crimea'),
   ].map((key) => [key, key]),
 );
 
