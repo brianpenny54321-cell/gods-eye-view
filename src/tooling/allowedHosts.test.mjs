@@ -37,6 +37,13 @@ test('rejects suffix and wildcard entries so every LAN hostname is explicit', ()
   ]);
 });
 
+test('allows all hosts when configured with all, *, true or boolean true', () => {
+  assert.equal(resolveAllowedHosts('all'), true);
+  assert.equal(resolveAllowedHosts('*'), true);
+  assert.equal(resolveAllowedHosts('true'), true);
+  assert.equal(resolveAllowedHosts(true), true);
+});
+
 test('a Host is allowed by the same rule Vite applies', () => {
   const allowed = ['localhost', '127.0.0.1', 'globe.lan', '.corp.example'];
   for (const host of [

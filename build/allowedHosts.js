@@ -13,14 +13,24 @@ export const DEFAULT_ALLOWED_HOSTS = Object.freeze(['localhost', '127.0.0.1']);
 
 /**
  * Resolve Vite's allowedHosts setting from an optional comma-separated list.
- * Empty entries and suffix/wildcard entries are ignored; repeated names keep
- * their first occurrence. Vite treats leading-dot values as suffix wildcards,
- * which would defeat an explicit host policy.
+ * Passing 'all', '*', 'true' or true returns true to allow all hosts (useful for
+ * public tunnels, remote 5G/Wi-Fi access, and cloud deployments).
+ * Empty entries and suffix/wildcard entries in a comma-separated list are ignored;
+ * repeated names keep their first occurrence. Vite treats leading-dot values as
+ * suffix wildcards, which would defeat an explicit host policy.
  *
- * @param {string|undefined|null} configuredHosts
- * @returns {string[]}
+ * @param {string|undefined|null|boolean} configuredHosts
+ * @returns {string[]|true}
  */
 export function resolveAllowedHosts(configuredHosts) {
+  if (
+    configuredHosts === true ||
+    configuredHosts === 'all' ||
+    configuredHosts === '*' ||
+    configuredHosts === 'true'
+  ) {
+    return true;
+  }
   const hosts = String(configuredHosts ?? '')
     .split(',')
     .map((host) => host.trim())
